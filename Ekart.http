@@ -1,0 +1,38 @@
+
+######
+Get http://localhost:1234/ekart/get
+
+######
+POST http://localhost:1234/ekart/add
+Content-Type:application/json 
+
+{
+    "receiverName": "John",
+    "parcelItemName": "Watch",
+    "receiverAddress": "US",
+    "receiverContact": 62445857,
+    "productprice": 23500,
+    "productStatus": "delivered",
+    "executiveName": "Presious Store",
+    "executiveId": 1
+
+}
+    
+##########
+  PUT http://localhost:1234/ekart/update
+    Content-Type: application/json
+
+    {
+    "parcelId": 7,
+    "receiverName": "Amir",
+    "parcelItemName": "Coat",
+    "receiverAddress": "UK",
+    "receiverContact": 601457,
+    "productprice": 5910,
+    "productStatus": "delivered",
+    "executiveName": "Happy buying",
+    "executiveId": 2
+    }
+
+###########
+    GET http://localhost:1234/ekart/byExecutive/1

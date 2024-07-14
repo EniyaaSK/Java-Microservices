@@ -1,0 +1,17 @@
+######
+
+Get http://localhost:8086/executive/
+
+######
+POST http://localhost:8086/executive/add
+Content-Type:application/json 
+
+{
+     "executiveId": 4,
+    "executiveName": "Happy shopping",
+    "executiveContact": 75462541,
+    "servicePin": 78520
+}
+
+######
+GET http://localhost:8086/executive/1
